@@ -4,7 +4,11 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                bat' echo Hello World'
+                bat 'javc hello.java'
+                bat 'java solution'
+            
+               
             }
         }
     }
