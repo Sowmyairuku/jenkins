@@ -13,12 +13,12 @@ public class TestFactorial {
             if (Factorial.compute(6) != 720) {
                 throw new AssertionError("Test failed for 6");
             }
-            System.out.println("✅ All test cases passed!");
+            System.out.println("All test cases passed!");
         } catch (AssertionError e) {
-            System.out.println("❌ " + e.getMessage());
+            System.out.println( e.getMessage());
             System.exit(1);  // make Jenkins fail the build
         } catch (Exception e) {
-            System.out.println("❌ Unexpected error: " + e.getMessage());
+            System.out.println( e.getMessage());
             System.exit(1);
         }
     }
